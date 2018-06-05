@@ -1,0 +1,278 @@
+body{
+    margin:0px;
+    margin-top: 0px;
+}
+
+.general{
+    display:grid;
+    grid-template-columns: 320px 960px;    
+    grid-template-rows: 320px 70%;
+}
+.header{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    background-image:url(../../assets/design2_image1.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 960px;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.logo {
+    grid-column-start:1;
+    grid-row-start:1;
+    background-color:#aab7b8;
+    
+    }
+.logoNYSL{
+    width:280px;
+    padding:20px;
+    z-index:2;
+}
+
+h1{
+    
+    display:none;
+    font-style: oblique;
+    font-size: 40px;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    margin:0px;
+    background-color:#FFFFFF;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+
+h2{
+    background-color:#aab7b8;
+    color:#fafafa;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left:20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    z-index:1; 
+    align-items:flex-start;
+}
+
+
+.nav {
+    
+    z-index:1;
+    grid-column:1;
+    grid-row:2/6;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: #aab7b8;  
+    min-height: 425px;
+    
+}
+.nav a {
+    color: #fafafa;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size:15px; 
+    padding-left: 20px;
+    padding-top: 10px;    
+}
+
+/*
+div{
+   
+    display:flex;
+    flex-direction:row;
+    color: darkgrey;
+    margin-left:320px;
+
+}
+*/
+
+.agenda{
+    display:inline-block;
+    margin-top:30px;
+    
+}
+
+h3{
+    font-size:20px;
+    font-family:arial;
+    font-weight: bold;
+    color: black;
+    margin-left: 0px; 
+}
+
+p{
+     margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.date{
+    font-style: italic;
+}
+.active {
+    background-color: #839192;
+    
+}
+
+li {
+    font-size:16px;
+}
+    
+.list_square {list-style-type: square;}
+
+/*.list_1 {list-style-type: decimal-leading-zero;}*/
+
+.section1, .section2, .section3, .section4{
+    margin-left: 30px;
+    margin-right:60px;
+    font-family: sans-serif;
+    font-size:16px;
+}
+.note {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-style: oblique;  
+    
+}
+.a {list-style-type: lower-latin;}
+
+table{
+    font-size: 16px;
+    font-family: sans-serif;
+    align-items: center;
+    border:1px solid; 
+    border-collapse: collapse;
+    border-spacing: 5px 50px;
+    margin-bottom:0px;
+    table-layout:fixed;
+    width: 100%;
+}
+th, td{
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.google_map{
+    text-align: right;
+    width: 100%;
+    border:0px;
+}
+.Game_Location{
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    border:0px;
+    padding-bottom:60px;
+    table-layout:auto;
+}
+th.Game_Location, td.Game_Location{
+    width: 30% 30% 40%;
+}
+.Info_titles  { 
+    font-size: 18px;
+    font-family: sans-serif;
+    Font-weight:bold;
+    padding-top: 20px;
+    margin-top:0px;
+    margin-left: 0px;
+    width: 700px;
+}
+
+.info_email { 
+    font-size: 16px;
+    font-family: sans-serif;
+    Font-weight:bold;
+    padding-top: 20px;
+    margin-top:0px;
+    margin-left: 0px;
+}
+
+.content{
+    font-family: sans-serif;
+    font-size:16px;
+    font-weight: normal;
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.location{
+    display:inline-flex;
+    flex-direction: column;
+   align-content: center;
+}
+
+
+
+.registration_form{
+    display:flex;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 0px;
+    
+}
+
+fieldset {
+    margin:30px;
+    margin-right: 60px;
+    background-color: #d5dbdb;
+   
+}
+label {
+    margin: 10px;
+    
+}
+h4{
+    margin:10px;
+    font-size: 20px;
+}
+h5 {
+    margin:10px;
+    font-size: 18px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.subform {
+    margin-top: 20px;
+}
+.uniform {
+    display: inline-flex;
+    flex-direction: column;
+}
+.size{
+    display:inline-flex;
+    flex-wrap:wrap;
+    align-content: stretch;
+}
+ input[type="submit"]{
+    width: 95px;
+    height: 45px;
+    align-items: flex-start;
+    text-align: center;
+    color: #F4F6F6;
+    background-color: #839192;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: #717D7E;
+    border-image: initial;
+}
+input{
+    background-color: #F4F6F6;
+    border-width: 1px;
+    border-style: outset;
+    border-color: #717D7E;
+}
+.bold{
+    Font-weight:bold;
+    
+}
